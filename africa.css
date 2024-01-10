@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(1, 9, 24);
+}
+
+.mapdiv {
+    width: 48%;
+    margin: auto;
+}
+
+svg path {
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: 0.3;
+    transition: fill 0.6s;
+    cursor: pointer;
+}
+
+svg path:hover:not(.selected) {
+    fill: #006284;
+    stroke-width: 0.8;
+    opacity: 0.8;
+}
+
+svg path.selected {
+    fill: #006284;
+    stroke-width: 1;
+}
+
+#country-info {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 15px;
+    max-height: 250px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}

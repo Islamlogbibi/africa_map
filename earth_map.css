@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica;
+    background-color: rgb(1,9,24);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 750px 500px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+a:hover{
+    color: #006284;
+    transition: 1s;
+}
+
+.logo {
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+video{
+    position: fixed;
+    width: 1fr;
+    top: 100px;
+    right: 0;
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h1 span{
+    color: #006284;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+.btn{
+    width: 300px;
+    height: 80px;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: #006284;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: #006284;
+    color: rgb(1,9,24);
+    transition: 1s;
+}
+
+
+div ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1500px) {
+    .header {
+        display: grid;
+        grid-template-columns: 600px 400px;
+    }
+    .welcome{
+        text-align: center;
+        margin-top: 100px;
+    }
+    h2{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1250px) {
+    .header {
+        display: grid;
+        grid-template-columns: 500px 300px;
+    }
+    .welcome{
+        text-align: center;
+        margin-top: 100px;
+    }
+    h2{
+        margin-top: 30px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .header {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+    .logo {
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+    
+}
+@media (max-width:400px) {
+    .header {
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+    .logo {
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+    
+}
